@@ -17,6 +17,13 @@ class RegisterSerializer(BaseRegisterSerializer):
     last_name = serializers.CharField(required=True, max_length=150)
     phone_number = serializers.CharField(required=False, allow_blank=True, max_length=20)
 
+    def validate_email(self, email):
+        """Ensure the email is unique to avoid 500 IntegrityError."""
+        email = super().validate_email(email)
+        if CustomUser.objects.filter(email__iexact=email).exists():
+            raise serializers.ValidationError("A user with this email address already exists.")
+        return email
+
     def get_cleaned_data(self):
         data = super().get_cleaned_data()
         data["first_name"] = self.validated_data.get("first_name", "")

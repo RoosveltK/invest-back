@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify your email</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+            color: #333333;
+        }
+
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            background-color: #f4f6f8;
+            padding: 40px 0;
+        }
+
+        .main {
+            background-color: #ffffff;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 20px 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1a1f36;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .logo span {
+            color: #0052FF;
+            /* Logo icon color approximation */
+            margin-right: 8px;
+            font-size: 28px;
+            vertical-align: middle;
+        }
+
+        .content {
+            padding: 20px 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1a1f36;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #4f566b;
+            margin-bottom: 30px;
+        }
+
+        .button-container {
+            margin-bottom: 40px;
+        }
+
+        .button {
+            background-color: #0052FF;
+            color: #ffffff !important;
+            text-decoration: none;
+            padding: 14px 32px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 16px;
+            display: inline-block;
+        }
+
+        .fallback {
+            border-top: 1px solid #e3e8ee;
+            padding-top: 30px;
+            font-size: 13px;
+            color: #8792a2;
+            word-break: break-all;
+            margin-bottom: 20px;
+        }
+
+        .fallback a {
+            color: #0052FF;
+            text-decoration: none;
+        }
+
+        .footer {
+            background-color: #f8f9fa;
+            border-top: 1px solid #e3e8ee;
+            padding: 30px 40px;
+            text-align: center;
+            font-size: 12px;
+            color: #8792a2;
+            line-height: 1.6;
+        }
+
+        .footer .socials {
+            margin-bottom: 20px;
+        }
+
+        .footer .socials a {
+            margin: 0 10px;
+            color: #8792a2;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .footer .links {
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        .footer .links a {
+            color: #0052FF;
+            text-decoration: none;
+            margin: 0 10px;
+            text-transform: uppercase;
+            font-size: 11px;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <table class="main" role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
+            <tr>
+                <td class="header">
+                    <a href="app.coinvest.com" class="logo">
+                        <span>&#10043;</span> Coinvest
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td class="content">
+                    <h1>Welcome to Coinvest</h1>
+                    <p>Your account has been created. To start managing your collaborative investments and access your
+                        dashboard, please verify your email address below.</p>
+                    <div class="button-container">
+                        <a href="http://localhost:3000/verify/test-token-1234" class="button">Verify Email</a>
+                    </div>
+
+                    <div class="fallback">
+                        If the button above doesn't work, copy and paste this link into your browser:<br>
+                        <a href="http://localhost:3000/verify/test-token-1234">http://localhost:3000/verify/test-token-1234</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="footer">
+                    <div class="socials">
+                        <a href="#">&lt;</a>
+                        <a href="#">&#127758;</a>
+                        <a href="#">&#9993;</a>
+                    </div>
+                    <div>
+                        Sent by Coinvest Management Inc.<br>
+                        123 Financial Plaza, Suite 400, San Francisco, CA 94104<br>
+                        You're receiving this because you signed up for Coinvest.
+                    </div>
+                    <div class="links">
+                        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
